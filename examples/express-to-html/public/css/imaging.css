@@ -1,0 +1,230 @@
+@charset "UTF-8";
+
+/*!
+Author - zhwangart
+*/
+
+body{
+    position: relative;
+    font-family: "微软雅黑","Microsoft YaHei",sans-serif,Helvetica,Arial;
+    color: #333;
+    line-height: 1.8;
+}
+
+a,button{
+    -webkit-transition: all .5s ease 0s;
+    -moz-transition: all .5s ease 0s;
+    -o-transition: all .5s ease 0s;
+    transition: all .5s ease 0s;
+}
+
+a{
+    text-decoration: none!important;
+    color: black;
+}
+a:hover,
+a:focus{
+    color: black;
+    opacity: .7;
+}
+textarea{resize: none;}
+input:focus{box-shadow: none!important;}
+
+.text-primary{color: #f90!important;}
+.text-invert{color: #fff!important;}
+.text-muted{color: #999!important;}
+
+.bg-muted{background: #f6f6f6;}
+
+/*! 单线按钮 */
+.btn-bordered{background-color: transparent;}
+.btn-bordered:hover,
+.btn-bordered:active{color: #fff;}
+
+.btn-primary-bordered{
+    border-color: #f90;
+    color: #f90;
+}
+.btn-primary-bordered:hover,
+.btn-primary-bordered:active{background-color: #f90;}
+
+.btn-success-bordered{
+    border-color: #a5ce4f;
+    color: #a5ce4f;
+}
+.btn-success-bordered:hover,
+.btn-success-bordered:active{background-color: #a5ce4f;}
+
+.btn-css-bordered{
+    border-color: #2ba6e1;
+    color: #2ba6e1;
+}
+.btn-css-bordered:hover,
+.btn-css-bordered:active{background-color: #2ba6e1;}
+
+.btn-vis-bordered{
+    border-color: #910781;
+    color: #910781;
+}
+.btn-vis-bordered:hover,
+.btn-vis-bordered:active{background-color: #910781;}
+
+
+.footer{
+    border-top: solid 1px #eee;
+    background-color: #f9f9f9;
+    padding: 30px 0 15px;
+    margin-top: 30px;
+}
+
+.header{
+    position: relative;
+    z-index: 9;
+}
+/* 导航条 */
+.navbar-imaging-bolg{
+    border-bottom: solid 1px #eee;
+    border-radius: inherit;
+    box-shadow: 0 0 5px rgba(0,0,0,.05);
+    margin-bottom: 30px;
+}
+.navbar-imaging-bolg .icon-bar{background-color: #666;}
+/* 标志 */
+.navbar-brand-logo{
+    font-size: 26px;
+    color: #f90;
+}
+@media (min-width: 768px) {
+    .navbar-brand-logo{
+        padding-top: 30px;
+    }
+}
+.navbar-brand-logo h1{
+    display: inline;
+    padding: 0;
+    margin: 0;
+    font-family: "Arial Black", arial-black;
+    font-size: 20px;
+}
+.navbar-brand-logo:hover{color: #f90;}
+.navbar-brand-logo:before{content: "\e601";}
+/* 导航 */
+.navbar-imaging-bolg-nav > li{
+    padding: 19px 0 11px;
+    margin: 0 15px;
+    border-bottom: solid 2px transparent;
+}
+.navbar-imaging-bolg-nav > li > a{
+    display: inline-block;
+    padding: 15px 2px;
+    font-size: medium;
+    color: #999;
+}
+.navbar-imaging-bolg-nav > li > a:hover,
+.navbar-imaging-bolg-nav > li > a:focus{
+    background: none;
+    color: black;
+}
+.navbar-imaging-bolg-nav > li.active{border-bottom-color: #f90;}
+.navbar-imaging-bolg-nav > li.active a{color: #f90;}
+
+/* 巨幕 */
+.jumbotron-imaging-blog{
+    position: relative;
+    background-attachment: fixed;
+    background-size: cover;
+    background-image: url(../images/jumbotron/jumbotron.jpg);
+    border: solid 1px #eee;
+}
+.jumbotron-imaging-blog h2,
+.jumbotron-imaging-blog p{font-size: large;}
+
+/* 面板 */
+.panel-list-blog{
+    border-radius: inherit;
+    border-bottom: solid 1px #eee;
+    box-shadow: none;
+    padding-bottom: 15px;
+    margin-bottom: 0;
+}
+.panel-list-blog > .panel-body{
+    padding-right: 0;
+    padding-left: 0;
+}
+.panel-list-blog > .panel-body > h3{margin-bottom: 25px;}
+
+.list-inline-blog-author{
+    font-size: inherit;
+    color: #999;
+}
+.list-inline-blog-author > li+li:before{
+    content: "|";
+    padding-right: 15px;
+    color: #eee;
+}
+.media-blog-author img{
+    width: 24px;
+    height: 24px;
+}
+
+/* 博客主体 */
+.panel-blog-body{
+    border-radius: inherit;
+    box-shadow: none;
+    margin: 30px 0 15px;
+}
+.panel-blog-body img{max-width: 100%;}
+
+
+/* 缩略图 */
+.thumbnail-qrcode{
+    background-color: transparent;
+    border-radius: 0;
+    border: none;
+    padding: 0;
+    margin: 10px 0 0;
+    text-align: center;
+}
+.thumbnail-qrcode > img{width: 96px;}
+
+/* 翻页 */
+.pager-zhblog{margin-top: 30px;}
+.pager-zhblog .page-number{
+    display: inline-block;
+    padding: 5px 15px;
+}
+.pager-zhblog li > a,
+.pager-zhblog li > span {
+    display: inline-block;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px 15px;
+}
+.pager-zhblog li > a:hover,
+.pager-zhblog li > span:hover{
+    background-color: #f90;
+    border-color: #fb0;
+    color: #fff;
+}
+.pager-zhblog li.disabled > a:hover,
+.pager-zhblog li.disabled > span:hover{border-color: #ddd;}
+
+.share-scan-QR-code{
+    position: absolute;
+    z-index: 9;
+    top: 95px;
+    right: 0;
+    background: #fff;
+    width: 150px;
+}
+.share-scan-QR-code > .thumbnail{padding: 0;}
+.share-scan-QR-code > .thumbnail > .caption{padding: 0;}
+
+
+
+/* IconFont-新橙象-图标大小 */
+.iconfont.iconfont-big-xs{font-size: 32px;}
+.iconfont.iconfont-big-sm{font-size: 48px;}
+.iconfont.iconfont-big-md{font-size: 64px;}
+.iconfont.iconfont-big-lg{font-size: 72px;}

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>博客-新橙象</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <meta name="keywords" content="博客,新橙象,设计师">
+    <meta name="description" content="">
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="stylesheet" href="iconfont/iconfont.css"/>
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <link rel="stylesheet" href="css/animate.css"/>
+    <link rel="stylesheet" href="css/imaging.css"/>
+</head>
+<body>
+
+<header class="header">
+    <nav class="navbar navbar-imaging-bolg">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-blog-collapse" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand navbar-brand-logo iconfont" target="_blank" href="http://newimaging.cn">
+                    <h1>Blog</h1>
+                </a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-blog-collapse">
+                <ul class="nav navbar-nav navbar-right navbar-imaging-bolg-nav">
+                    <li class="active"><a href="#">博客</a></li>
+                    <li><a href="#">实例</a></li>
+                    <li><a href="#">文章</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<div id="jumbotron">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-10 col-sm-offset-1">
+                <div class="jumbotron jumbotron-imaging-blog">
+                    <h2>谈谈技术  聊聊设计</h2>
+                    <p class="text-muted">新橙象-写代码的设计师，们</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-5 col-sm-offset-1">
+                <form role="form">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="站内搜索">
+                    <span class="input-group-btn">
+                        <button class="btn btn-default" type="button">搜索</button>
+                    </span>
+                    </div>
+                </form>
+            </div>
+            <div class="col-sm-5 hidden-xs text-right">
+                <a class="text-primary" target="_blank" href="#">关于企业官网设计的思路</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="blog">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-10 col-sm-offset-1">
+                <ul class="list-unstyled">
+                    {{each articles}}
+                    <li>
+                        <div class="panel panel-list-blog">
+                            <div class="panel-body">
+                                <h3><a target="_blank" href="single.html">{{$value.title}}</a></h3>
+                                <p class="text-muted">{{$value.description}}</p>
+                                <div class="media media-blog-author">
+                                    <div class="media-left">
+                                        <img class="img-circle" src="images/thumbnail/thumbnail-dog.jpg" alt="NewImaging">
+                                    </div>
+                                    <div class="media-body">
+                                        <ul class="list-inline list-inline-blog-author">
+                                            <li>NewImaging</li>
+                                            <li><i class="iconfont">&#xe64e;</i> <time>{{$value.createdate}}</time></li>
+                                            <li><i class="iconfont">&#xe686;</i> <a class="text-primary" target="_blank" href="#">创业</a>,<a class="text-primary" target="_blank" href="#">文化</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    {{/each}}
+                    
+                    <li>
+                        <div class="panel panel-list-blog">
+                            <div class="panel-body">
+                                <h3><a target="_blank" href="single.html">再见2012</a></h3>
+                                <p class="text-muted">沿着这城市一起走过的每一个地方，慢慢走着，似乎在探寻三年以前关于半边身子赌注的故事，闻闻什刹海水的味道，看看古老的建筑物，还是否能找到你我爱情留下的痕迹，追溯过去留在这座城市中的脚印，品味下独特的古都情怀。终我一生，我想我再也找不到那年月里埋在心里的最初的美好。</p>
+                                <div class="media media-blog-author">
+                                    <div class="media-left">
+                                        <img class="img-circle" src="images/thumbnail/thumbnail-dog.jpg" alt="NewImaging">
+                                    </div>
+                                    <div class="media-body">
+                                        <ul class="list-inline list-inline-blog-author">
+                                            <li>NewImaging</li>
+                                            <li><i class="iconfont">&#xe64e;</i> <time>12/29/2016</time></li>
+                                            <li><i class="iconfont">&#xe686;</i> <a class="text-primary" target="_blank" href="#">创业</a>,<a class="text-primary" target="_blank" href="#">文化</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="panel panel-list-blog">
+                            <div class="panel-body">
+                                <h3><a target="_blank" href="single.html">老大告诉我：佛也是要敬的！</a></h3>
+                                <p class="text-muted">如是我闻，佛在舍卫国给孤独园为三千诸天讲法，尔时，给孤独尊者即从座起，偏袒右肩，合掌向佛而...</p>
+                                <div class="media media-blog-author">
+                                    <div class="media-left">
+                                        <img class="img-circle" src="images/thumbnail/thumbnail-dog.jpg" alt="NewImaging">
+                                    </div>
+                                    <div class="media-body">
+                                        <ul class="list-inline list-inline-blog-author">
+                                            <li>NewImaging</li>
+                                            <li><i class="iconfont">&#xe64e;</i> <time>12/29/2016</time></li>
+                                            <li><i class="iconfont">&#xe686;</i> <a class="text-primary" target="_blank" href="#">创业</a>,<a class="text-primary" target="_blank" href="#">文化</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <nav>
+                    <ul class="pager pager-zhblog">
+                        <li class="previous disabled"><a href="#"><span aria-hidden="true">&larr;</span> 上一页</a></li>
+                        <span class="page-number">第 1 页/共 67 页</span>
+                        <li class="next"><a href="#">下一页 <span aria-hidden="true">&rarr;</span></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <ul class="list-inline">
+                    <li>Copyright&copy;2016</li>
+                    <li><a href="/">北京新橙象科技有限公司</a></li>
+                    <li><a target="_blank" href="http://www.miitbeian.gov.cn/">京ICP备16055487号</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+<script type="text/javascript" src="script/jquery-1.8.1.min.js"></script>
+<script type="text/javascript" src="script/bootstrap.min.js"></script>
+<script type="text/javascript" src="script/transition.js"></script>
+<script type="text/javascript" src="script/scrollspy.js"></script>
+<script type="text/javascript" src="script/collapse.js"></script>
+<script type="text/javascript" src="script/tab.js"></script>
+<script type="text/javascript" src="script/dropdown.js"></script>
+<script type="text/javascript" src="script/wow.min.js"></script>
+<script type="text/javascript">
+    new WOW().init();
+</script>
+</html>

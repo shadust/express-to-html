@@ -1,0 +1,4 @@
+/index.html
+/multiple/dir/test.html
+/single.html
+/test.html
