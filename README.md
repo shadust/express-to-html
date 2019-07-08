@@ -2,7 +2,7 @@
 The simple program can convert your express web to html pages. I coded it for my friend. 
 
 # How to use?
-The program include one middleware file and two route files. 
+The program include one middleware file, two route files and one config file. 
 
 ### middleware/recorder.js
 It's a middleware to record the url of your pages. You don't neet to edit 'output.txt' by your self. 
@@ -22,6 +22,15 @@ use the url:
 http://localhost:3000/output
 ```
 
+### config.js
+You can edit "config.js" if you want to change host and port.
+```
+const port = 3000;
+const base_url = 'http://localhost:'+port;
+
+module.exports = {port:port,base_url:base_url}
+```
+
 # Add it to your website
 
 ```
@@ -38,6 +47,4 @@ app.use(urlRecorder); // add it
 app.use('/', spiderRouter); // add it
 ...
 ```
-# Config
 
-You can edit "config.js" if you want to change host and port.
